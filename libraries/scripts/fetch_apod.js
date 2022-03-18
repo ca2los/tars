@@ -1,9 +1,9 @@
     'use strict';
 
-    let nasa = 'Ts5ZxkXKWGHtT35tfpDLSWQzDeaYcVoWxHJcxRIs';
-    let nasa_planetary = 'https://api.nasa.gov/planetary/apod?api_key=' + nasa;
+    let nasa_key = 'Ts5ZxkXKWGHtT35tfpDLSWQzDeaYcVoWxHJcxRIs';
+    let nasa_planetary = 'https://api.nasa.gov/planetary/apod?api_key=' + nasa_key;
 
-    fetch(nasa_planetary).then(function (response){
+    fetch(nasa_planetary).then(function(response){
        return response.json();
     }).then(function (data){
         console.log(data);
@@ -19,3 +19,6 @@
         }
         console.log(planetary);
     })
+
+
+    // ASTRONOMY PICTURE OF THE DAY
