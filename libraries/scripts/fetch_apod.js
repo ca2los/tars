@@ -17,7 +17,11 @@
             get_title:data.title,
             get_url:data.url
         }
-        console.log(planetary);
+
+        // DYNAMIC (CREATE) HTML: WHEN the data is retrieved THEN create the objects
+        let background_img = document.createElement('img');
+        document.body.children[1].children[0].appendChild(background_img).setAttribute('src',planetary.get_hdurl);
+
     })
 
 
