@@ -1,11 +1,71 @@
+    :root {
+        --bg: #19191c;
+        --wh: #ffffff;
+        --font-active: #307fff;
+        --font-hover: #005aff;
+        --mono: 'Space Mono', monospace;
+        --sans: 'Barlow', sans-serif;
+    }
+
     body {
-        background: #000;
-        color: #fff;
-        #type_txt {
-            &.comment {}
-        }
-        button {
-            &#submit {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        background: var(--bg);
+        color: var(--wh);
+        margin: 0 auto;
+        .apod {
+            max-width: 320px;
+            align-items: flex-start;
+            background: var(--bg);
+            border: 1px solid #3c2eca;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px 30px;
+            text-align: center;
+            .title {
+                width: 100%;
+                font-family: var(--sans);
+                font-size: 2em;
+                margin: 0 0 10px;
+                padding: 0;
             }
+            .author {
+                font-family: var(--mono);
+                font-size: .8em;
+                margin: 0 8px 24px 0;
+                padding: 0;
+            }
+            .date {
+                font-family: var(--mono);
+                font-size: .8em;
+                margin: 0 0 24px;
+                padding: 0;
+            }
+            .rendition {
+                width: 100%;
+                margin: 0 auto;
+            }
+            .type {
+                font-family: var(--mono);
+                font-size: .6em;
+                letter-spacing: 1px;
+                margin: -20px 0 0;
+                position: relative;
+                text-decoration: underline;
+                text-transform: uppercase;
+                z-index: 1;
+            }
+            .description {
+                color: #8a8ac5;
+                font-family: var(--sans);
+                font-size: 1em;
+                line-height: 1.4;
+                margin: 24px 0 10px;
+                padding: 0;
+            }
+            .button {}
         }
     }

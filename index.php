@@ -9,6 +9,9 @@
             <title> JS Powered · Salary Calculator </title>
             <link rel="icon" type="image/vnd.microsoft.icon" href="./libraries/img/favicon.ico"/>
             <link rel="shortcut icon" type="image/vnd.microsoft.icon" href="./libraries/img/favicon.ico"/>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600&family=Space+Mono&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="./libraries/styles/styles.min.css"/>
         </head>
         <body>
